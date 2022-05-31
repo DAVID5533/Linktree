@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-image: url(imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.imagen{
+    width:150px;
+    height:150px;
+    border-radius:150px;
+    border: 2px solid black;
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    animation-name: imagen;
+    animation-duration: 3s;
+}
+
+.boton1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 30px;
+    animation: boton 1s ;
+}
+
+@keyframes imagen{
+    10%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes boton{
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+}
+}
+
+.contenedor-links {
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.borde{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #515751;
+    border-radius: 15px;
+    border: 2px double #070707;
+}
+
+.contenedor{
+    width: 30%;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 35%;
+    background-image: linear-gradient(#070707,#515751);
+    border-radius: 60px;
+}
+
+.foo{
+    margin-top: 125px;
+    height: 50px;
+}
+
+@media (max-width : 1100px){
+    .contenedor{
+        width: 60%;
+        height: 600px;
+        margin-top: 50px;
+        margin-left: 20%;
+        background-image: linear-gradient(#070707,#515751);
+        border-radius: 60px;
+    }
+    .borde{
+        text-decoration: none;
+        padding: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 200;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #515751;
+        border-radius: 15px;
+        border: 2px double #070707;
+    }
+    p{
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+        color: white;
+    }
+    
+    
+}
